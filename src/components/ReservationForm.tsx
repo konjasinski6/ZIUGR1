@@ -77,7 +77,7 @@ export function ReservationForm() {
             value={formData.guest_name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
             placeholder="John Doe"
           />
         </div>
@@ -96,7 +96,7 @@ export function ReservationForm() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
             placeholder="john@example.com"
           />
         </div>
@@ -115,7 +115,7 @@ export function ReservationForm() {
             value={formData.phone}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
             placeholder="+1 (555) 123-4567"
           />
         </div>
@@ -133,7 +133,7 @@ export function ReservationForm() {
             value={formData.party_size}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
           >
             {[...Array(20)].map((_, i) => (
               <option key={i + 1} value={i + 1}>
@@ -158,7 +158,7 @@ export function ReservationForm() {
             onChange={handleChange}
             min={today}
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
           />
         </div>
 
@@ -176,7 +176,7 @@ export function ReservationForm() {
             value={formData.reservation_time}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all"
           />
         </div>
       </div>
@@ -194,7 +194,7 @@ export function ReservationForm() {
           value={formData.special_requests}
           onChange={handleChange}
           rows={4}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-all resize-none"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all resize-none"
           placeholder="Any dietary restrictions, occasion, or special accommodations..."
         />
       </div>
@@ -214,7 +214,7 @@ export function ReservationForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full bg-amber-600 hover:bg-amber-700 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl"
+        className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl"
       >
         {isSubmitting ? 'Submitting...' : 'Reserve Table'}
       </button>
